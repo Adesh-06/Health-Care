@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/RegBgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24*7 Health Care"
+        android:textColor="#E02AFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="75dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lgnCrdVw"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:elevation="5dp"
+        app:cardCornerRadius="16dp"
+        android:padding="7dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lgnTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#E6DFDF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="12dp"/>
+
+        <EditText
+            android:id="@+id/lgnName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" user name "
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="5dp"
+            android:textColorHint="#F4F3F3"
+            android:inputType="text"
+            android:background="@drawable/input_bg"
+            android:padding="15dp"
+            android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/lgnPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Password "
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="5dp"
+                android:textColorHint="#F4F3F3"
+                android:inputType="text"
+                android:background="@drawable/input_bg"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"
+            />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLgn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text=" Login "
+                android:backgroundTint="#3A468A" />
+
+            <TextView
+                android:id="@+id/lgnNewUsr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register New user"
+                android:textColor="#fff"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
